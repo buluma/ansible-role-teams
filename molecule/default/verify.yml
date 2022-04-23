@@ -1,0 +1,9 @@
+---
+- hosts: all
+  remote_user: root
+  become: true
+  tasks:
+    - name: teams
+      ansible.builtin.command: teams
+      register: result
+      changed_when: result is not succeeded

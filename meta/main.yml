@@ -1,0 +1,38 @@
+---
+galaxy_info:
+  namespace: buluma
+  role_name: teams
+  author: Michael Buluma
+  description: Ansible Role for Microsoft Teams Installation
+  company: ShadowNet
+  license: Apache-2.0
+  min_ansible_version: "4.10"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+        - impish
+        - focal
+        - bionic
+    - name: EL
+      versions:
+        - "9"
+        - "8"
+        - "7"
+    - name: OpenSUSE
+      versions:
+        - latest
+        - "15.4"
+        - "15.1"
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
+    - name: Fedora
+      versions:
+        - "36"
+        - "35"
+        - "34"
+  galaxy_tags:
+    - system
+dependencies: []
