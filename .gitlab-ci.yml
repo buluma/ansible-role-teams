@@ -10,7 +10,7 @@ variables:
 
 molecule:
   script:
-    - image=${image} tag=${tag} molecule test
+    - image=${image} tag=${tag} -v molecule test
   retry: 1
   parallel:
     matrix:
