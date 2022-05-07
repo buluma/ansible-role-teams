@@ -1,5 +1,6 @@
 ---
-- include_role:
+- name: include epel role
+  include_role:
     name: buluma.epel
 
 - name: redhat | rpm --import
