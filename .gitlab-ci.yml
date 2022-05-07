@@ -9,6 +9,8 @@ variables:
   PY_COLORS: 1
 
 molecule:
+  stage: build
+  allow_failure: true
   script:
     - image=${image} tag=${tag} molecule test
   retry: 1
@@ -20,8 +22,6 @@ molecule:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
-      - image: "enterpriselinux"
-        tag: "7"
       - image: "enterpriselinux"
         tag: "latest"
       - image: "docker-opensuse-systemd"
@@ -36,6 +36,8 @@ molecule:
         tag: "latest"
 
 testing:
+  stage: test
+  needs: []
   script:
     - image=${image} tag=${tag} molecule test
   rules:
@@ -50,8 +52,6 @@ testing:
       - image: "docker-ubuntu-systemd"
         tag: "focal"
       - image: "enterpriselinux"
-        tag: "7"
-      - image: "enterpriselinux"
         tag: "latest"
       - image: "docker-opensuse-systemd"
         tag: "latest"
@@ -65,10 +65,14 @@ testing:
         tag: "latest"
 
 galaxy:
+  stage: deploy
+  needs: []
   script:
     - ansible-galaxy role info buluma.teams
 
 role_testing:
+  stage: test
+  needs: []
   script:
     - image=${image} tag=${tag} ansible-galaxy install buluma.teams
   retry: 1
@@ -81,8 +85,6 @@ role_testing:
       - image: "docker-ubuntu-systemd"
         tag: "focal"
       - image: "enterpriselinux"
-        tag: "7"
-      - image: "enterpriselinux"
         tag: "latest"
       - image: "docker-opensuse-systemd"
         tag: "latest"
@@ -94,3 +96,21 @@ role_testing:
         tag: "34"
       - image: "fedora-systemd"
         tag: "latest"
+
+release_job:
+  stage: .post
+  needs: [molecule]
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: $CI_COMMIT_TAG
+  script:
+    - echo "Running the release job."
+  release:
+    tag_name: $CI_COMMIT_TAG
+    name: 'Release $CI_COMMIT_TAG'
+    description: 'Release created using the release-cli.'
+  artifacts:
+    name: "$CI_JOB_STAGE-$CI_COMMIT_REF_NAME"
+    paths:
+      - /
+    expire_in: 1 day
