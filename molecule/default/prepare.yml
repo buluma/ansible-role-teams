@@ -7,4 +7,3 @@
 
   roles:
     - role: buluma.bootstrap
-    - role: buluma.epel
