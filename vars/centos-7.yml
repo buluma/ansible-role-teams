@@ -16,4 +16,5 @@ _yum_repository:
     state: "present"
 
 _yum:
+  - { state: "latest", name: "Libstdc++.so.6(glibcxx_3.4.22)(64bit)" }
   - { state: "latest", name: "teams" }
