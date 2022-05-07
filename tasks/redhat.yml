@@ -1,6 +1,6 @@
 ---
 - name: include epel role
-  include_role:
+  ansible.builtin.include_role:
     name: buluma.epel
 
 - name: redhat | rpm --import
