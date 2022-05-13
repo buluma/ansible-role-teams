@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-teams/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-teams/compare/0.1.0...HEAD)
+
+**Closed issues:**
+
+- Complete [\#1](https://github.com/buluma/ansible-role-teams/issues/1)
+
+**Merged pull requests:**
+
+- Develop [\#3](https://github.com/buluma/ansible-role-teams/pull/3) ([buluma](https://github.com/buluma))
+
 ## [0.1.0](https://github.com/buluma/ansible-role-teams/tree/0.1.0) (2022-04-23)
 
 [Full Changelog](https://github.com/buluma/ansible-role-teams/compare/10881924919ee906b4c03c457b71dafb8205b8f5...0.1.0)
