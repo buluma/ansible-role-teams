@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- Bump buluma/molecule-action from 4.0.6 to 4.0.7 [\#4](https://github.com/buluma/ansible-role-teams/pull/4) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Develop [\#3](https://github.com/buluma/ansible-role-teams/pull/3) ([buluma](https://github.com/buluma))
 
 ## [0.1.0](https://github.com/buluma/ansible-role-teams/tree/0.1.0) (2022-04-23)
