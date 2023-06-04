@@ -1,6 +1,6 @@
 ---
 
-- name: Debian | Apt-key add
+- name: debian | Apt-key add
   ansible.builtin.apt_key:
     keyring: "{{ item.keyring }}"
     url: "{{ item.url }}"
@@ -10,7 +10,7 @@
   register: result
   until: result is succeeded
 
-- name: Debian | Apt-add-repository
+- name: debian | Apt-add-repository
   ansible.builtin.apt_repository:
     filename: "{{ item.filename }}"
     repo: "{{ item.repo }}"
@@ -20,7 +20,7 @@
   register: result
   until: result is succeeded
 
-- name: Debian | Apt-get install teams
+- name: debian | Apt-get install teams
   ansible.builtin.apt:
     name: "{{ item.name }}"
     state: "{{ item.state }}"
