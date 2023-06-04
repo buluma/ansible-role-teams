@@ -1,6 +1,6 @@
 ---
 
-- name: suse | rpm --import
+- name: suse | Rpm --import
   vars:
     ansible_python_interpreter: "python3"
   ansible.builtin.rpm_key:
@@ -11,7 +11,7 @@
   register: result
   until: result is succeeded
 
-- name: suse | yum-config-manager --add-repo
+- name: suse | Yum-config-manager --add-repo
   ansible.builtin.yum_repository:
     file: "{{ item.file }}"
     name: "{{ item.name }}"
@@ -26,7 +26,7 @@
     reposdir: "{{ item.reposdir | default('/etc/zypp/repos.d') }}"
   loop: "{{ _yum_repository }}"
 
-- name: suse | zypper install teams
+- name: suse | Zypper install teams
   vars:
     ansible_python_interpreter: "python3"
   ansible.builtin.zypper:

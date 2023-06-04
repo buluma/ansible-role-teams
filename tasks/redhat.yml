@@ -1,9 +1,9 @@
 ---
-- name: include epel role
+- name: Include epel role
   ansible.builtin.include_role:
     name: buluma.epel
 
-- name: redhat | rpm --import
+- name: Redhat | Rpm --import
   ansible.builtin.rpm_key:
     key: "{{ item.key }}"
     fingerprint: "{{ item.fingerprint }}"
@@ -12,7 +12,7 @@
   register: result
   until: result is succeeded
 
-- name: redhat | yum-config-manager --add-repo
+- name: Redhat | Yum-config-manager --add-repo
   ansible.builtin.yum_repository:
     file: "{{ item.file }}"
     name: "{{ item.name }}"
@@ -24,7 +24,7 @@
     state: "{{ item.state }}"
   loop: "{{ _yum_repository }}"
 
-- name: redhat | yum install teams
+- name: Redhat | Yum install teams
   ansible.builtin.yum:
     name: "{{ item.name }}"
     state: "{{ item.state }}"
