@@ -10,6 +10,8 @@
 
 **Merged pull requests:**
 
+- Bump buluma/gitlab-mirror-ci-action from 1.0.6 to 1.0.7 [\#9](https://github.com/buluma/ansible-role-teams/pull/9) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump act10ns/slack from 1 to 2 [\#7](https://github.com/buluma/ansible-role-teams/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 4.0.6 to 4.0.7 [\#4](https://github.com/buluma/ansible-role-teams/pull/4) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Develop [\#3](https://github.com/buluma/ansible-role-teams/pull/3) ([buluma](https://github.com/buluma))
 
