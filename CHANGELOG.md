@@ -6,6 +6,8 @@
 
 **Closed issues:**
 
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#11](https://github.com/buluma/ansible-role-teams/issues/11)
+- Update action [\#10](https://github.com/buluma/ansible-role-teams/issues/10)
 - Complete [\#1](https://github.com/buluma/ansible-role-teams/issues/1)
 
 **Merged pull requests:**
