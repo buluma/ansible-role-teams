@@ -1,4 +1,4 @@
-# [teams](#teams)
+# [Ansible role teams](#teams)
 
 Ansible Role for Microsoft Teams Installation
 
