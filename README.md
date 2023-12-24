@@ -1,10 +1,10 @@
-# [Ansible role teams](#teams)
+# Ansible role [teams](https://galaxy.ansible.com/ui/standalone/roles/buluma/teams/documentation)
 
 Ansible Role for Microsoft Teams Installation
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-teams/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-teams/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-teams.svg)](https://github.com/buluma/ansible-role-teams/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-teams.svg)](https://github.com/buluma/ansible-role-teams/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-teams.svg)](https://github.com/buluma/ansible-role-teams/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-teams/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-teams/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-teams.svg)](https://github.com/buluma/ansible-role-teams/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-teams.svg)](https://github.com/buluma/ansible-role-teams/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-teams.svg)](https://github.com/buluma/ansible-role-teams/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/teams)](https://galaxy.ansible.com/ui/standalone/roles/buluma/teams/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -99,9 +99,7 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
